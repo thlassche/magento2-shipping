@@ -312,7 +312,7 @@ class Tablerate extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
             }
 
             $this->shippingMethod = $key;
-            $this->importConditionName = $this->getConditionName($object, $object->getGroupId());
+            $this->importConditionName = $this->getConditionName($object, $key);
             $adapter = $this->getConnection();
             $adapter->beginTransaction();
             try {
