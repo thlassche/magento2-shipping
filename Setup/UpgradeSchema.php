@@ -220,7 +220,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
                 )->addColumn(
                     'condition_name',
                     \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
-                    20,
+                    100,
                     ['nullable' => false],
                     'Rate Condition name'
                 )->addColumn(
